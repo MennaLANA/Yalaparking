@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>login -author</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap" rel="stylesheet" />
+  </head>
+  <!-- Sign In Popup -->
+  <div id="sign-in-dialog" class="zoom-anim-dialog mfp-hide">
+    <div class="small-dialog-header">
+        <h3>Log In</h3>
+    </div>
+    <!--Tabs -->
+    <div class="sign-in-form style-1">
+        <div class="tabs-container alt margin-top-10">
+            <!-- Login -->
+            <div class="tab-content" id="tab1" style="display: none;">
+                
+<form action="/account/login" class="login" id="login" method="post">                                <p class="form-row form-row-wide">
+                        <label for="EmailAddress" class="col-md-12">
+                            Email Address:
+                            <i class="im im-icon-Male"></i>
+                            <input class="input-text" id="EmailAddress" name="EmailAddress" placeholder="Email address" required="required" type="text" value="" />
+                        </label>
+                    </p>
+                    <p class="form-row form-row-wide">
+                        <label for="password" class="col-md-12">
+                            Password:
+                            <i class="im im-icon-Lock-2"></i>
+                            <input autocomplete="new-password" class="input-text" id="password" name="Password" placeholder="Password" required="required" type="password" />
+                        </label>
+                    </p>
+                    <p class="form-row form-row-wide" style="margin-bottom:20px;">
+                        <div class="checkboxes margin-top-10 col-md-12">
+                            <input id="RememberMe" type="checkbox" name="check">
+                            <label for="RememberMe">Remember Me</label>
+                        </div>
+                    </p>
+                    <div class="form-row">
+                        <input type="submit" class="button border margin-top-10" name="login" value="Login" />
+                        
+                    </div>
+                    <p>
+                        <span class="lost_password col-md-12 margin-top-10">
+                            <a href="/account/forgottenpassword" class="">Forgot your password?</a>
+                        </span>
+                    </p>
+</form>                        </div>
+        </div>
+    </div>
+</div>
+<!-- Sign In Popup / End -->
+
+</div>
+</div>

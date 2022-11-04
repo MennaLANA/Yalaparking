@@ -1,0 +1,444 @@
+:root {
+    --color-one: #e6e6ff;
+    --color-two: #1a1aff;
+    --color-three: #b3b3ff;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin:0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+body {
+    color: #bfc1c8;
+    font-family: "Roboto", "Open Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.5;
+    font-style: normal;
+}
+/*import font file*/
+@font-face {
+    font-family: Droid Arabic Kufi;
+    src: url(../webfonts/font/Droid\ Arabic\ Kufi\ Regular.ttf);
+}
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@700&display=swap');
+
+
+  
+  
+  /* Start Navbar */
+  .navbar {
+    background-color:#fff;
+  }
+  .navbar .navbar-nav .nav-link {
+    color: white;
+  }
+  .navbar .navbar-nav .nav-link.active,
+  .navbar .navbar-nav .nav-link:focus,
+  .navbar .navbar-nav .nav-link:hover {
+    color: rgb(193, 68, 23);
+  }
+
+  .my-form{
+    background: #fff;
+    padding: 30px 50px;
+    border-radius: 10px;
+  }
+  .form-title{
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .form-title h1{
+    margin: 0px;
+    color: #0cd6a8;
+  }
+  .single-input{
+    width: 270px;
+    border:1px solid #c1c1c1;
+    display: flex;
+    margin-bottom: 15px;
+  }
+  .single-input i{
+    padding: 8px 16px;
+    color: #0cd6a8;
+  }
+  .single-input input{
+    border:0px solid #c1c1c1;
+    width: 100%;
+    outline: none;
+    height: 30px;
+    font-size: 18px;
+  }
+  .submit-btn{
+     border:0px solid #c1c1c1;
+     margin-top: 30px;
+    
+  }
+  .submit-btn input{
+     background: #0cd6a8;
+     color: #fff;
+     cursor: pointer; 
+  }
+  
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0
+}
+
+ul>li {
+    padding: 4px;
+    color:#C5CAE9;
+}
+
+ul>li:hover {
+    color: #ef913ac7;
+    cursor:pointer
+}
+
+hr {
+    border-width: 3px
+}
+
+.card {
+    padding: 2% 7%
+}
+
+.social>i {
+    padding: 1%;
+    font-size: 15px
+}
+
+.social>i:hover {
+    color: #ed9e1f;
+    cursor: pointer
+}
+
+.policy>div {
+    padding: 4px
+}
+
+.heading {
+    font-family: 'Titillium Web', sans-serif;
+    color: black
+}
+
+.divider {
+    border-top: 2px solid
+}
+
+.navbar .navbar-toggler {
+    color: white;
+    font-size: 25px;
+    border-color: white;
+  }
+  .navbar .navbar-toggler:focus {
+    box-shadow: none;
+  }
+  .navbar .navbar-toggler[aria-expanded="true"] {
+    border-color: var(--green-color);
+  }
+
+  .navbar-nav me-auto mb-2 mb-lg-0 nav-item
+  {
+    color:black;
+    align-content: space-between;
+    display: flex;
+  }
+
+  .map {
+    height: 30rem;
+  }
+  .map iframe {
+    pointer-events: none;
+    height: 100%;
+    width: 100%;
+    border: 0;
+  }
+  
+  @media (max-width: 992px) {
+    .map {
+      height: 75%;
+    }
+  }
+  .row {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1 * var(--bs-gutter-y));
+    margin-right: calc(-0.5 * var(--bs-gutter-x));
+    margin-left: calc(-0.5 * var(--bs-gutter-x));
+}
+.col1{
+    margin-top: -10 em;
+}
+.col-md-4 {
+    flex: 0 0 auto;
+    width: 33.33333333%;
+  }
+.text-center{
+    margin-top: 80px;
+  }
+.img-thumbnail{
+    height: 200px;
+    width: 200px;
+    border: none;
+}
+                                      /* End Navbar */
+
+                            /* Start features-section */
+
+.card {
+    border: 1px solid var(--color-three);
+    margin-bottom: 20px;
+    transition: border 0.1s, transform 0.3s;
+}
+
+.card:hover {
+    border: 1px solid var(--color-two);
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+    cursor: pointer;
+}
+
+.card .card-body h2 {
+    color: var(--color-two);
+}
+
+.card img:hover {
+  opacity: 0.6;
+}
+
+.card-title {
+    color: var(--color-three);
+}
+
+.card-p i {
+    color: var(--color-two);
+    margin-right: 8px;
+}
+/* End Features */
+
+.parking {
+  text-align: center;
+}
+.parking h2{
+  font-size: 45px;
+  color: #333;
+  margin-bottom: 0px;
+  font-weight: 300;
+}
+.parking p{
+  color: #777;
+}
+.parking .swiper{
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.parking .swiper-wrapper{
+  display: flex;
+  align-items: center;
+}
+.parking .swiper-slide img{
+  width: 200px;
+}
+
+
+
+
+/* Partners  */
+.partners .row img {
+	width: 200px;
+	height: 100px;
+}
+@media (max-width: 768px) {
+	.partners .row img {
+		width: 150px;
+	}
+}
+.partners .container {
+	max-width: 1000px;
+	
+}
+/* End Partners */
+/*slider*/
+/*start section partners*/
+.places {
+  text-align: center;
+}
+.places h2{
+  font-size: 45px;
+  color: #333;
+  margin-bottom: 0px;
+  font-weight: 300;
+}
+.places p{
+  color: #777;
+}
+.places .swiper{
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.places .swiper-wrapper{
+  display: flex;
+  align-items: center;
+}
+.places .swiper-slide img{
+  width: 200px;
+}
+/*end section partners*/
+  /*End slider*/
+
+
+ 
+  i{
+    color: #F18120;
+}
+
+.jumbotron{
+
+     margin:15px 30px 0px 30px;
+    border-radius:10px;
+    background-color: rgb(54, 56, 62); 
+    color:   #36383e;
+    background-size: 1487.52px 939px;
+     background-position: 50% -178.714px;
+   background-color: rgb(54, 56, 62,6); 
+
+  background-image: url("https://www.yallaparking.com/Content/img/slider-bg-02.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color:white !important;
+  height:505;
+  width:800;
+
+  }
+ 
+
+
+
+
+                            /* Start footer */
+
+
+/* Start Footer */
+footer {
+	color: var(--gray-color);
+}
+footer .container {
+	border-bottom: 1px solid gray;
+}
+footer .logo img {
+	max-width: 100px;
+}
+footer .left {
+	max-width: 300px;
+}
+footer .left p {
+	font-size: 14px;
+}
+footer .right .right-links li{
+    list-style-type: none;
+}
+footer .right .right-links a {
+	font-size: 14px;
+	text-decoration: none;
+	color: grey;
+}
+footer .right .right-links a:hover{
+    color: #F18120;
+}
+.mt-3, .my-3 {
+    margin-top: 3rem!important;
+}
+.right-links ul i{
+color: grey;
+}
+footer .contact {
+	max-width: 160px;
+	font-size: 13px;
+}
+
+footer .bottom p {
+	font-size: 14px;
+}
+span{
+    color: #F18120;
+}
+.social i{
+    color: rgba(128, 128, 128, 0.667);
+}
+.social i:hover{
+    
+}
+/* End Footer */
+/*  Partners  */
+.partners .row img {
+	width: 200px;
+	height: 100px;
+}
+@media (max-width: 768px) {
+	.partners .row img {
+		width: 150px;
+	}
+}
+.partners .container {
+	max-width: 1000px;
+	border-bottom: 1px solid #CCC;
+}
+/* End Partners  */
+/* popular places */
+.places .container-fluid .row {
+	overflow: hidden;
+	margin-left: -140px;
+}
+.places .container-fluid .row a {
+	width: 280px;
+	height: 300px;
+	display: block;
+	background-size: cover;
+	border-radius: 4px;
+	overflow: hidden;
+}
+.places .container-fluid .row a::before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-color: rgba(0 0 0 / 20% );
+}
+.places .container-fluid .row a:nth-child(1) {
+	background-image: url(https://www.yallaparking.com/Content/img/SZR.jpg);
+}
+.places .container-fluid .row a:nth-child(2) {
+	background-image: url(https://www.yallaparking.com/Content/img/category-box-01.jpg);
+}
+.places .container-fluid .row a:nth-child(3) {
+	background-image: url(https://www.yallaparking.com/Content/img/DubaiMarina.jpg);
+}
+.places .container-fluid .row a:nth-child(4) {
+	background-image: url(https://www.yallaparking.com/Content/img/SZR.jpg);
+}
+.places .container-fluid .row a:nth-child(5) {
+	background-image: url(https://www.yallaparking.com/Content/img/dubai-1367094_1280.jpg);
+}
+.places .container-fluid .row a:nth-child(6) {
+	background-image: url(https://www.yallaparking.com/Content/img/SZR.jpg);
+}
+.places .container-fluid .row a .text {
+	transform: translate(-50%, 0);
+	color: white !important;
+}
+.places .container-fluid .row a .text p {
+	color: var(--bul-color);
+}
+
+/* End popular places */
